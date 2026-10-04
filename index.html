@@ -12,6 +12,12 @@
       padding: 0 1rem;
       line-height: 1.6;
     }
+    .smiley {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 2rem auto 0;
+    }
   </style>
 </head>
 <body>
@@ -27,5 +33,25 @@
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
     sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
+  <svg class="smiley" xmlns="http://www.w3.org/2000/svg" width="144" height="144"
+       viewBox="0 0 160 160" role="img" aria-labelledby="smiley-title">
+    <title id="smiley-title">Usměvavý žlutý smajlík</title>
+    <defs>
+      <linearGradient id="smiley-fill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffe88a" />
+        <stop offset="100%" stop-color="#ffbf3f" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="80" cy="146" rx="45" ry="6" fill="#442c18" opacity="0.12" />
+    <circle cx="80" cy="76" r="64" fill="url(#smiley-fill)" />
+    <path d="M 40 44 A 49 49 0 0 1 80 27" fill="none" stroke="#fff5cc"
+          stroke-width="7" stroke-linecap="round" />
+    <ellipse cx="57" cy="68" rx="6" ry="9" fill="#442c18" />
+    <ellipse cx="103" cy="68" rx="6" ry="9" fill="#442c18" />
+    <ellipse cx="43" cy="88" rx="11" ry="7" fill="#f58c75" opacity="0.65" />
+    <ellipse cx="117" cy="88" rx="11" ry="7" fill="#f58c75" opacity="0.65" />
+    <path d="M 53 91 C 63 115 97 115 107 91" fill="none" stroke="#442c18"
+          stroke-width="6" stroke-linecap="round" />
+  </svg>
 </body>
 </html>
